@@ -10,7 +10,7 @@ jobs:
         runs-on: ubuntu-latest
 
         container:
-            image: eeems/remarkable-toolchain:latest-rmpp
+            image: eeems/remarkable-toolchain:latest-rm2
 
         steps:
             - name: Checkout Code
@@ -24,7 +24,7 @@ jobs:
             - name: Build Application
               shell: bash
               run: |
-                source /opt/codex/ferrari/*/environment-setup-cortexa53-crypto-remarkable-linux
+                source /opt/codex/*/*/environment-setup-cortexa53-crypto-remarkable-linux
                 mkdir build
                 cd build
                 cmake ..

@@ -25,7 +25,7 @@ jobs:
               shell: bash
               run: |
                 ls /opt/codex/rm2/*/
-                source /opt/codex/rm2/*/environment-setup-cortexa53-crypto-remarkable-linux
+                source /opt/codex/rm2/*/environment-setup-cortexa7hf-neon-remarkable-linux-gnueabi
                 mkdir build
                 cd build
                 cmake ..

@@ -24,7 +24,7 @@ jobs:
             - name: Build Application
               shell: bash
               run: |
-                tree /opt/codex/
+                ls -R /opt/codex/
                 source /opt/codex/*/*/environment-setup-cortexa53-crypto-remarkable-linux
                 mkdir build
                 cd build
